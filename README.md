@@ -1,4 +1,4 @@
-![Amazone](https://anilcharif.github.io/amazone/index.html)
+![Amazone](https://anilcharif.github.io/amazone/)
 # Achat de Vente 
 &copy; [Zoher charif]() -Amt
 [Visiter le site &raquo](#)
