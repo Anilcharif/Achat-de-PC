@@ -95,7 +95,6 @@ main section{
 main{
     max-width: 80rem;
     margin: 0 auto 2rem;
-    border: solid .1rem var(--color-border);
     padding: 1rem;
     border-radius: 1rem;
     background-color: var(--color-over);
