@@ -1,5 +1,7 @@
 /*reset*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+
 html {
 font-size : 62.5%;
 scroll-behavior : smooth;
@@ -15,11 +17,11 @@ background-color:#363E40;
     box-sizing : border-box;
     }
 
- h1, h2, h3, h4, p,  ol, figure {
-     margin : 0;
-     padding : 0;
-     list-style : none;
-      }
+ h1,h2,h3,h4,p,ol,figure {
+margin : 0;
+padding : 0;
+list-style : none;
+}
 h1,h2, h3,h4,h5,h6 {
 font-family: 'Roboto', sans-serif;
 font-weight : 200;
@@ -28,108 +30,181 @@ text-transform : capitalize;
 
 section img {
 
-    display: inline-block;
-    width: 100%;
-    height: 100%;
-    vertical-align: middle;
-    object-fit: cover;
+display: inline-block;
+vertical-align: middle;
+object-fit: cover;
 }
 
 a {
-    text-decoration : none;
-    color : #222;
+text-decoration : none;
+color : #222;
+}
+
+
+
+
+
+
+
+
+
+/*  theme */
+:root{
+
+--color-primary : #000000;
+--color-secondary : #ffffff;
+--color-complementary : #2D3436;
+--color-last : #D14600;
+--color-header :#DFE6E9;
+--color-text: rgb(2, 2, 2);
+
+}
+
+header {
+    font-size: 16px;
+    text-align: center;
+    background-color: #DFE6E9;
+    padding: 0 0 1rem;
+}
+
+
+/* header img {
+    height: 20px;
+    width: 20px;
+} */
+
+
+
+
+
+.logo{
+    background-color:var(--color-secondary);
+    padding: .1rem 0 0;
+    text-align: center;
+    font-size: medium;
+    text-transform: uppercase;           /* mettre en Maj  */
+    margin-bottom: 2rem;
+}
+.logo ul li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin:   0  5rem 0;
+}
+.logo ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo ul li a {
+    margin: 1rem;
+
+}
+main{
+    margin : 10rem auto 28rem auto ;
+    border-radius: .6rem;
+    }
+    figcaption{
+        margin-top: 2rem;
+        font-size: 16px;
+    }
+    
+    figcaption h2 {
+    font-size: medium;
+    } 
+    main section{
+        display: flex;
+        margin: 0 auto;
+        background-color:var(--color-secondary);
+        max-width: 80rem;
     }
 
 
 
+strong {
+    font-weight: 550 ;
+    font-family:Arial, Helvetica, sans-serif;
 
-/* thème */
-
-:root{
-    --color-defalt: #222;
-    --color-main:#e9e9e9;
-    --color-text-header:#fff;
-    --color-text-var: rgb(196, 191, 191);
-    --color-border: rgb(224, 222, 222);
-    --color-over: #f2f3e7;
+}
+section figcaption p   {
+margin: 1rem auto
+        
 }
 
-
-header {
-    line-height: 6rem;
-    background-color: var(--color-text-header);
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-}
-
-header h1 {
-    color: var(#fff);
-    text-align: center;
-    
-}
-
-header img {
-    width: 5rem;
-    height: 5rem;
-    vertical-align: -1.5rem;
-}
-div.logo ul{
+main button{
+    margin: 10rem 1rem 1rem 24rem;
+    position: absolute;
     display: flex;
-    background-color: #e9e9e9;
-    color: var(#fff);
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-}
-div.logo ul li{
-    margin: 1rem 2rem;
-
-
-
-} 
-main section{
-    display: flex;
-}
-main{
-    max-width: 80rem;
-    margin: 0 auto 2rem;
-    padding: 1rem;
-    border-radius: 1rem;
-    background-color: var(--color-over);
-}
-
-main img {
-    display: block;
-    width: 100%;
-    border-radius: 1rem;
-}
-main ul li {
-    display: inline-block;
-    text-align: center;
-    margin: 3rem;
-    border:  solid .1rem var(--color-text-var);
-    width: calc(100% / 1 - 6rem);
-    border-radius: .7rem;
+    background-color:var(--color-last);
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    font-size: 17px;
     cursor: pointer;
+
+
+}
+main button img{
+    filter: invert(100%);
+    display: flex;
+    margin-top: 0.6rem;
+    margin-left: 0.3rem;
+
+}
+main button img p{
+    text-align: center;
 }
 
-main ul li a {
-    display: block;
-    width: 100%;
-    text-transform: capitalize;
-    transition: all 500ms ease-in-out;
-    font-weight: bolder;
-    font-size: 2.4rem;
-    line-height: 4rem;
-    padding: 1rem;
-    color: rgb(180, 43, 43);
+span{
+    padding: 0;
+    margin: 0;
 }
 
 footer {
-    max-width: 200rem;
-    margin: 0 auto;
+    margin:  auto;
     border: solid .1rem var(--color-border);
     padding: 1rem;
-    background-color: var(--color-over);
+    background-color: var(--color-secondary);
     text-align: center;
 }
+
+@media screen and (max-width: 50rem){
+    body{
+        background-color: #fff;
+    }
+    .logo ul{
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+        margin: 0rem;
+        padding: 0rem;
+    }
+    .logo ul li{
+        margin: 0rem;
+    }
+    section {
+        display: flex;
+        flex-direction: column;
+        font-size: 14px; 
+        }
+        main{
+            margin: 0rem;
+        }
+        main section img{
+            max-width: 30rem;
+        }
+        main section div{
+            margin: 0 auto;
+        }
+        main section figcaption{
+            margin: 0rem 1rem;
+        }
+        main button{
+            position: inherit;
+            margin: 1rem auto;
+        }
+}
+
+
