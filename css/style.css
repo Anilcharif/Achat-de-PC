@@ -29,7 +29,6 @@ text-transform : capitalize;
 }
 
 figure img {
-
 display: inline-block;
 vertical-align: middle;
 object-fit: cover;
@@ -102,7 +101,7 @@ header {
 
 }
 main{
-    margin : 0rem auto 25rem auto ;
+    margin : 0rem auto 27rem auto ;
     border-radius: .6rem;
     }
     figcaption{
@@ -114,6 +113,7 @@ main{
     font-size: medium;
     } 
     main figure{
+        position: relative;
         display: flex;
         margin:  10rem auto 10rem auto;
         background-color:var(--color-secondary);
@@ -132,34 +132,34 @@ margin: 1rem auto
         
 }
 
-main button{
-    margin: 10rem 1rem 1rem 24rem;
-    position: absolute;
-    display: flex;
+main figure button{
+   
+    position: absolute;      /* pour aligner le bouton et cadi */
+    bottom: 1rem;
+    right: 1rem;
+    line-height: 3.5rem;
+
     background-color:var(--color-last);
     color: #fff;
     border-radius: 5px;
     border: none;
-    font-size: 17px;
     cursor: pointer;
-    align-items: center;
-    justify-content: center;
+    width: 20rem;
     padding: 0.5rem;
 
 
 }
-main button img{
+main figure button img{
     filter: invert(100%);
-    display: flex;
-    margin-top: 0.7rem;
-    margin-left: 0.3rem;
+    display: inline-block;     /*  pour aligner le cadi */
+   
 
 
 
 }
 
 span{
-    padding: 0;
+    padding: 0; 
     margin: 0;
 }
 
