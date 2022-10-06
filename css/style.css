@@ -148,6 +148,7 @@ main figure button{
     padding: 0.5rem;
 
 
+
 }
 main figure button img{
     filter: invert(100%);
@@ -203,9 +204,15 @@ footer {
         main figure figcaption{
             margin: 0rem 1rem;
         }
-        main button{
+        main figure button{
+            display: block;
             position: inherit;
             margin: 1rem auto;
+
+        }
+        footer{
+            margin: 0;
+            padding: 0;
         }
 }
 
