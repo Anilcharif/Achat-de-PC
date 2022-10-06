@@ -84,17 +84,17 @@ header {
     text-transform: uppercase;           /* mettre en Maj  */
     margin-bottom: 2rem;
 }
+.logo ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .logo ul li {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     margin:   0  5rem 0;
-}
-.logo ul{
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 .logo ul li a {
     margin: 1rem;
@@ -104,6 +104,14 @@ main{
     margin : 0rem auto 27rem auto ;
     border-radius: .6rem;
     }
+    main figure{
+        position: relative;
+        display: flex;
+        margin:  10rem auto 10rem auto;
+        background-color:var(--color-secondary);
+        max-width: 80rem;
+    }
+    
     figcaption{
         margin-top: 2rem;
         font-size: 16px;
@@ -127,7 +135,7 @@ strong {
     font-family:Arial, Helvetica, sans-serif;
 
 }
-figure figcaption p   {
+figure figcaption p  {
 margin: 1rem auto
         
 }
@@ -146,6 +154,7 @@ main figure button{
     cursor: pointer;
     width: 20rem;
     padding: 0.5rem;
+    font-size: 18px;
 
 
 
@@ -154,9 +163,6 @@ main figure button img{
     filter: invert(100%);
     display: inline-block;     /*  pour aligner le cadi */
    
-
-
-
 }
 
 span{
@@ -166,8 +172,8 @@ span{
 
 footer {
     margin:  auto;
-    border: solid .1rem var(--color-border);
     padding: 1rem;
+    border: solid .1rem var(--color-border);
     background-color: var(--color-secondary);
     text-align: center;
 }
