@@ -101,7 +101,7 @@ header {
 
 }
 main{
-    margin : 0rem auto 27rem auto ;
+    margin : 0rem 0 27rem 0 ;
     border-radius: .6rem;
     }
     main figure{
@@ -128,9 +128,7 @@ main{
         max-width: 80rem;
     }
 
-
-
-strong {
+strong{
     font-weight: 550 ;
     font-family:Arial, Helvetica, sans-serif;
 
@@ -155,8 +153,6 @@ main figure button{
     width: 20rem;
     padding: 0.5rem;
     font-size: 18px;
-
-
 
 }
 main figure button img{
@@ -214,11 +210,19 @@ footer {
             display: block;
             position: inherit;
             margin: 1rem auto;
-
         }
-        footer{
-            margin: 0;
-            padding: 0;
+
+
+
+        @media screen and (orientation: landscape) {
+            main ul.top{
+                display: flex;
+                flex-direction: row;
+                margin: 0rem;
+            }
+            main ul.top li a{
+                justify-content: center;
+            }
         }
 }
 
