@@ -215,13 +215,17 @@ footer {
 
 
         @media screen and (orientation: landscape) {
-            main ul.top{
+            body{
+                background-color: #fff;
+            }
+            .logo ul{
                 display: flex;
+                justify-content: center;
                 flex-direction: row;
                 margin: 0rem;
             }
-            main ul.top li a{
-                justify-content: center;
+            .logo ul li{
+                margin: 0rem 2rem;
             }
         }
 }
