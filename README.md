@@ -4,7 +4,7 @@
 
  ![Roboto](asset/fonts.png)
 
- ## Color : 
+ 
  ### Charte graphique :
   ![Color](asset/color.png)
 
