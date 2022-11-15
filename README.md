@@ -1,4 +1,3 @@
-()
 
 ## Fonts :
  - Roboto light 300 disponible sur : [Google Fonts](https://fonts.google.com/specimen/Roboto?query=roboto)
